@@ -78,7 +78,7 @@ const projectList = [
       { name: "NodeJS" },
     ],
     image: discuss,
-    live: "https://discussionforum-azjvt4i4g.vercel.app/",
+    live: "https://discussionforum-three.vercel.app/",
     github: "https://github.com/Strikezor/discussionForum",
   },
 ];
