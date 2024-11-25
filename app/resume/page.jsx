@@ -17,7 +17,10 @@ import {
   SiTailwindcss,
   SiCplusplus,
   SiExpress,
+  SiMongodb,
 } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { TbBrandReactNative } from "react-icons/tb";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -31,59 +34,105 @@ import { easeIn, motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "I am a CS undergraduate at BITS with a passion for software engineering, actively seeking an internship to apply and enhance my skills. With a solid academic foundation and hands-on experience in multiple programming languages, I am eager to contribute to innovative projects and learn from seasoned professionals. As a quick learner, I am always ready to take on new challenges and grow in the field.",
+    "I'm a Data Science graduate and a versatile developer with expertise in Full-Stack and React Native development. I specialize in crafting web and mobile applications that are efficient, user-friendly, and impactful. With a strong foundation in data analysis and problem-solving, I enjoy merging creativity with technology to deliver seamless digital experiences. I am committed to continuous learning and staying ahead in the ever-evolving world of technology.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Venkatesh Alampally",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "SDE Intern at Dukaan",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Indian",
-    },
-    {
-      fieldName: "linktree",
-      fieldValue: "linktr.ee/venkatesh_alampally",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "+91 80749 62223",
-    },
-    {
-      fieldName: "X",
-      fieldValue: "@ASaiVenkatesh1",
+      fieldValue: "Akshay Chaturvedi",
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Telugu",
+      fieldValue: "English, Hindi",
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "+91 87707 87056",
     },
     {
       fieldName: "Mail",
-      fieldValue: "saivenkatesh.alampally@gmail.com",
+      fieldValue: "akshaych064@gmail.com",
     },
   ],
 };
 
 const cp = [
   {
-    fieldName: "Codeforces",
-    fieldValue: "codeforces.com/profile/Swift_ven14",
-  },
-  {
-    fieldName: "Atcoder",
-    fieldValue: "atcoder.jp/users/Swift_Ven14",
-  },
-  {
-    fieldName: "Codechef",
-    fieldValue: "codechef.com/users/venki1402",
-  },
-  {
     fieldName: "Leetcode",
-    fieldValue: "leetcode.com/u/venki1402",
+    fieldValue: "leetcode.com/u/akshay064",
+  },
+  {
+    fieldName: "GeeksforGeeks",
+    fieldValue: "geeksforgeeks.org/user/akshay064/",
+  },
+];
+const certificates = [
+  {
+    fieldName: "AWS Academy",
+    fieldValue: "Cloud Foundations",
+  },
+  {
+    fieldName: "AWS Academy",
+    fieldValue: "Data Analytics",
+  },
+  {
+    fieldName: "AWS Academy",
+    fieldValue: "Data Engineering",
+  },
+  {
+    fieldName: "AWS Academy",
+    fieldValue: "Machine Learning Foundations",
+  },
+  {
+    fieldName: "Oracle Academy",
+    fieldValue: "Database Programming with SQL",
+  },
+  {
+    fieldName: "IBM",
+    fieldValue: "Data Science 101",
+  },
+  {
+    fieldName: "IBM",
+    fieldValue: "Data Science Methodology",
+  },
+  {
+    fieldName: "IBM",
+    fieldValue: "Data Science Tools",
+  },
+  {
+    fieldName: "IBM Coursera",
+    fieldValue: "EDA for Machine Learning",
+  },
+  {
+    fieldName: "IBM Coursera",
+    fieldValue: "Supervised Machine Learning",
+  },
+  {
+    fieldName: "GeeksforGeeks",
+    fieldValue: "Graphic Designer",
+  },
+  {
+    fieldName: "Cisco Netacad",
+    fieldValue: "Programming Essentials in C",
+  },
+  {
+    fieldName: "Cisco Netacad",
+    fieldValue: "JavaScript Essentials",
+  },
+  {
+    fieldName: "Cisco Netacad",
+    fieldValue: "Networking Essentials",
+  },
+  {
+    fieldName: "Cisco Netacad",
+    fieldValue: "IoT Fundamentals (BDA)",
+  },
+  {
+    fieldName: "Cisco Netacad",
+    fieldValue: "Devnet Associates",
+  },
+  {
+    fieldName: "Cisco Netacad",
+    fieldValue: "CCNA 1",
   },
 ];
 
@@ -92,24 +141,19 @@ const education = {
   description: "Here's a brief overview of my educational background.",
   items: [
     {
-      institution: "SST",
-      degree: "Computer Science",
-      duration: "2027",
+      institution: "GGITS, Jabalpur",
+      degree: "B.Tech. in Data Science",
+      duration: "2024",
     },
     {
-      institution: "BITS Pilani",
-      degree: "Bsc. Computer Science",
-      duration: "2026",
+      institution: "Nalanda Public School",
+      degree: "Senior Secondary School",
+      duration: "2020",
     },
     {
-      institution: "FIITJEE Madhapur",
-      degree: "High School",
-      duration: "2023",
-    },
-    {
-      institution: "Genesis International",
-      degree: "Middle School",
-      duration: "2017",
+      institution: "Nalanda Public School",
+      degree: "Secondary School",
+      duration: "2018",
     },
   ],
 };
@@ -166,6 +210,18 @@ const skills = {
       icon: <SiExpress />,
       name: "express.js",
     },
+    {
+      icon: <SiMongodb />,
+      name: "mongodb",
+    },
+    {
+      icon: <IoLogoFirebase />,
+      name: "firebase",
+    },
+    {
+      icon: <TbBrandReactNative />,
+      name: "react native",
+    },
   ],
 };
 
@@ -185,11 +241,11 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="certificates">Certificates</TabsTrigger>
             <TabsTrigger value="cp">CP</TabsTrigger>
-            <TabsTrigger value="about">About</TabsTrigger>
+            <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
 
           {/* content */}
@@ -204,26 +260,28 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-6xl group-hover:text-accent transition-all">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
@@ -250,7 +308,7 @@ const Resume = () => {
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                            <p className="text-white/60 ">{item.institution}</p>
                           </div>
                         </li>
                       );
@@ -262,7 +320,34 @@ const Resume = () => {
 
             {/* certificates */}
             <TabsContent value="certificates" className="w-full">
-              {"I don\'t have any certificates yet 😅"}
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">Certificates</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  Here are some of the certificates I&apos;ve earned.
+                </p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-6  mx-auto xl:mx-0">
+                    {certificates.map((item, index) => (
+                      <li
+                        key={index}
+                        className="bg-[#232329] p-4 rounded-xl flex flex-col items-center xl:items-start gap-2"
+                      >
+                        <span className="text-accent font-semibold">
+                          {item.fieldName}
+                        </span>
+                        <a
+                          href={`https://${item.fieldValue}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white hover:text-accent transition-colors"
+                        >
+                          {item.fieldValue}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
             </TabsContent>
 
             {/* cp */}
@@ -273,26 +358,28 @@ const Resume = () => {
                   Here are my profiles on various competitive programming
                   platforms.
                 </p>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-6  mx-auto xl:mx-0">
-                  {cp.map((item, index) => (
-                    <li
-                      key={index}
-                      className="bg-[#232329] p-4 rounded-xl flex flex-col items-center xl:items-start gap-2"
-                    >
-                      <span className="text-accent font-semibold">
-                        {item.fieldName}
-                      </span>
-                      <a
-                        href={`https://${item.fieldValue}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white hover:text-accent transition-colors"
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-6  mx-auto xl:mx-0">
+                    {cp.map((item, index) => (
+                      <li
+                        key={index}
+                        className="bg-[#232329] p-4 rounded-xl flex flex-col items-center xl:items-start gap-2"
                       >
-                        {item.fieldValue}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                        <span className="text-accent font-semibold">
+                          {item.fieldName}
+                        </span>
+                        <a
+                          href={`https://${item.fieldValue}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white hover:text-accent transition-colors"
+                        >
+                          {item.fieldValue}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
@@ -306,19 +393,23 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
-                      >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-x">{item.fieldValue}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                    {about.info.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="flex items-center justify-center xl:justify-start gap-4"
+                        >
+                          <span className="text-white/60">
+                            {item.fieldName}
+                          </span>
+                          <span className="text-x">{item.fieldValue}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
           </div>

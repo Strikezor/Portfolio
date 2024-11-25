@@ -7,23 +7,23 @@ import Link from "next/link";
 
 const links = [
   {
-    name: "home",
+    name: "Home",
     path: "/",
   },
   {
-    name: "resume",
+    name: "Resume",
     path: "/resume",
   },
   {
-    name: "projects",
+    name: "Projects",
     path: "/projects",
   },
   {
-    name: "experience",
+    name: "Experience",
     path: "/experience",
   },
   {
-    name: "contact",
+    name: "Contact",
     path: "/contact",
   },
 ];
@@ -41,7 +41,7 @@ const MobileNav = () => {
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
-              Venki<span className="text-accent">.</span>
+              Strikezor<span className="text-accent">.</span>
             </h1>
           </Link>
         </div>

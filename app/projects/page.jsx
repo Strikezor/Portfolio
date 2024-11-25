@@ -17,69 +17,69 @@ import Link from "next/link";
 import Image from "next/image";
 
 // importing assets
-import project2048 from "../../public/assets/projects/2048.jpg";
-import projectImageEditor from "../../public/assets/projects/ImageEditor.jpg";
-import projectClock from "../../public/assets/projects/clock.jpg";
-import projectTodoList from "../../public/assets/projects/tolist.jpg";
-import projectBookLibrary from "../../public/assets/projects/bookLibrary.jpg";
+import placement from "../../public/assets/projects/placement.png";
+import sis from "../../public/assets/projects/sis.png";
+import discuss from "../../public/assets/projects/discuss.png";
+
 import WorkSliderButtons from "@/components/WorkSliderButtons";
 
 // Object Array
 const projectList = [
   {
     num: "01",
-    category: "frontend",
-    title: "2048",
+    category: "Full-Stack",
+    title: "Data Analysis and AI",
     Description:
-      "my version of the popular 2048 game made with vanilla javascript",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: project2048,
-    live: "https://venki1402.github.io/2048/",
-    github: "https://github.com/Venki1402/2048",
+      "An advanced chatbot to streamline student placement queries, providing personalized assistance.",
+    stack: [
+      { name: "NextJS/ReactJS" },
+      { name: "NodeJS" },
+      { name: "Tailwind/CSS" },
+      { name: "Gemini" },
+    ],
+    image: placement,
+    live: " ",
+    github: " ",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "Book Library",
+    category: "Full-Stack + IoT",
+    title: "Automated Irrigation System",
     Description:
-      "A simple book library that allows you to add, delete and update books",
-    stack: [{ name: "React Js" }, { name: "Spring" }, { name: "Java" }],
-    image: projectBookLibrary,
-    live: "https://book-library-service.vercel.app/",
-    github: "https://github.com/Venki1402/BookLibraryService",
+      "A real-time monitored irrigation system using web technologies and machine learning",
+    // HTML,  CSS,  JavaScript,  Flask,  Firebase,  Python  (Scikit-Learn,  Pandas),  NodeMCU, DHT  sensor,  Soil  Moisture  sensor
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "Flask" },
+      { name: "Firebase" },
+      { name: "Python" },
+      { name: "NodeMCU" },
+      { name: "DHT sensor" },
+      { name: "Soil Moisture sensor" },
+    ],
+    image: sis,
+    live: "",
+    github: "",
   },
   {
     num: "03",
-    category: "Backend",
-    title: "Image Editor",
+    category: "Full-Stack",
+    title: "Discussion Forum",
     Description:
-      "A simple image editor that allows you to upload an image and apply filters to it",
-    stack: [{ name: "Java" }, { name: "Bash" }],
-    image: projectImageEditor,
-    live: "https://github.com/Venki1402/Image_Editor",
-    github: "https://github.com/Venki1402/Image_Editor",
-  },
-  {
-    num: "04",
-    category: "frontend",
-    title: "Todo List",
-    Description:
-      "A simple todo list that allows you to add, delete and update tasks along with priority",
-    stack: [{ name: "React Js" }],
-    image: projectTodoList,
-    live: "https://to-do-list-v1-five.vercel.app/",
-    github: "https://github.com/Venki1402/to-do-list-v1",
-  },
-  {
-    num: "05",
-    category: "frontend",
-    title: "Analog Clock",
-    Description:
-      "A simple analog clock that displays the current time made using vanilla js",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: projectClock,
-    live: "https://venki1402.github.io/analogClock/",
-    github: "https://github.com/Venki1402/analogClock",
+      "A discussion forum where users can post questions, answer questions and upvote answers",
+    stack: [
+      { name: "NextJS/ReactJS" },
+      { name: "TypeScript" },
+      { name: "SQLite" },
+      { name: "Prisma" },
+      { name: "Tailwind/CSS" },
+      { name: "NodeJS" },
+    ],
+    image: discuss,
+    live: "https://discussionforum-azjvt4i4g.vercel.app/",
+    github: "https://github.com/Strikezor/discussionForum",
   },
 ];
 
@@ -109,7 +109,7 @@ const Projects = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-outline">
+              <div className="text-8xl leading-none font-extrabold text-outline ">
                 {project.num}
               </div>
               {/* project category */}
@@ -119,7 +119,8 @@ const Projects = () => {
               {/* project description */}
               <p className="text-white/60">{project.Description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-accent text-xl ">
                     {item.name}

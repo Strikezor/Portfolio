@@ -17,14 +17,14 @@ const stairAnimation = {
 const Stairs = () => {
   // clalc rev index
   const reverseIndex = (index) => {
-    const totalsteps = 6;
+    const totalsteps = 8;
     return totalsteps - index;
   };
 
   return (
     // render 6 divs , each representing a step of the stairs.
     <>
-      {[...Array(6)].map((_, index) => (
+      {[...Array(8)].map((_, index) => (
         <motion.div
           key={index}
           variants={stairAnimation}
@@ -32,7 +32,7 @@ const Stairs = () => {
           animate="animate"
           exit="exit"
           transition={{
-            duration: 0.4,
+            duration: 0.3,
             delay: reverseIndex(index) * 0.1,
           }}
           className="w-full h-full bg-white relative"

@@ -21,12 +21,12 @@ const StairTransition = () => {
             className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
             initial={{ opacity: 1 }}
             animate={{
-                opacity: 0,
-                transition: {
-                    duration: 0.4,
-                    delay: 1,
-                    ease: "easeInOut"
-                },
+              opacity: 0,
+              transition: {
+                duration: 0.3,
+                delay: 1,
+                ease: "easeInOut",
+              },
             }}
           />
         </div>

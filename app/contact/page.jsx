@@ -17,14 +17,13 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 // import emailJS from "@emailjs/browser";
 
-
 // mail function
 // const sendEmail = (e) => {
 //   e.preventDefault();
 
 //   emailJS
 //     .sendForm(
-      
+
 //       "service_2cctfng",
 //       "template_dwis9ld",
 //       e.target,
@@ -46,20 +45,19 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    value: "+91 80749 62223",
+    value: "+91 87707 87056",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    value: "saivenkatesh.alampally@gmail.com",
+    value: "akshaych064@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    value: "Hyderabad, India",
+    value: "Madhya Pradesh, India",
   },
 ];
-
 
 const Contact = () => {
   return (
@@ -81,11 +79,11 @@ const Contact = () => {
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let{"'"}s work together!</h3>
-              {/* <p className="text-white/60">
+              <p className="text-white/60">
                 I{"'"}m eager to collaborate on innovative projects and learn
                 from experienced professionals. Let{"'"}s achieve great results
                 together.
-              </p> */}
+              </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstname" placeholder="Firstname" />
@@ -104,6 +102,8 @@ const Contact = () => {
                     <SelectItem value="est">FullStack development</SelectItem>
                     <SelectItem value="cst">Backend development</SelectItem>
                     <SelectItem value="mst">Frontend development</SelectItem>
+                    <SelectItem value="mst">Graphic Designing</SelectItem>
+                    <SelectItem value="mst">Mobile App Development</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -143,5 +143,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-

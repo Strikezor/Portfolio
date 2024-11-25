@@ -4,20 +4,21 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 const experienceData = [
   {
-    company: "Dukaan®",
-    position: "SDE Intern",
-    duration: "August 2024 - Present",
-    location: "Bengaluru, IN - Hybrid",
+    company: "GeeksforGeeks",
+    position: "Part-Time Mentor",
+    duration: "Jan 2021 - Present",
+    location: "Remote",
     description:
-      "I'm Part of the platform team on project Bot9, responsible for developing and maintaining the core platform, including backend services and front-end integration.",
+      "Developed and delivered engaging video tutorials on web development technologies like ReactJS, SQL, and JavaScript, as well as machine learning and data science; fostered a community of 20K+ subscribers and re- ceived 80% positive feedback on content quality and clarity.",
     responsibilities: [
-      "Contributed to Bot9 project, utilizing Next.js for frontend development and Express.js for backend services",
-      "Collaborated with the platform team to enhance and maintain core services, focusing on seamless integration between backend and frontend components",
+      "Created  premium  courses  for  GeeksforGeeks.org",
+      "Provided  mentorship  and  guidance  to  students,  enhancing  their  understanding  and  skills.",
     ],
-    logo: "/assets/dukaan-logo.png",
+    logo: "/assets/gfg.png",
   },
   // I will add more experiences as needed
 ];
@@ -43,12 +44,9 @@ const Experience = () => {
             className="bg-[#232329] p-8 rounded-xl mb-8"
           >
             <div className="flex flex-col md:flex-row items-start md:items-center mb-4">
-              <Image
-                src={exp.logo}
-                alt={`${exp.company} Logo`}
-                width={100}
-                height={100}
-                className="rounded-full mr-4 mb-4 md:mb-0"
+              <SiGeeksforgeeks
+                className="text-6xl text-accent mr-8"
+                style={{ color: "#1c87f6" }}
               />
               <div>
                 <h3 className="text-2xl font-semibold">{exp.position}</h3>
