@@ -18,6 +18,7 @@ import {
   SiCplusplus,
   SiExpress,
   SiMongodb,
+  SiShadcnui,
 } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -221,6 +222,11 @@ const skills = {
     {
       icon: <TbBrandReactNative />,
       name: "react native",
+    },
+    //AceternityUI
+    {
+      icon: <SiShadcnui />,
+      name: "shadcn ui",
     },
   ],
 };
