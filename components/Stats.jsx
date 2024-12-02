@@ -3,11 +3,11 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    num: 571,
+    num: 574,
     title: "LeetCode Problems",
   },
   {
-    num: 103,
+    num: 106,
     title: "GeeksforGeeks Problems",
   },
   // {
@@ -15,7 +15,7 @@ const stats = [
   //   title: "LeetCode Global Ranking",
   // },
   {
-    num: 107,
+    num: 110,
     title: "GitHub Contributions",
   },
 ];
