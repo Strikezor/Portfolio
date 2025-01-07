@@ -17,7 +17,7 @@ const page = () => {
               Hello! I{"'"}m<br />{" "}
               <span className="text-accent">Akshay Chaturvedi</span>
             </h2>
-            <p className="max-w-[500px] mb-9 text-white/80">
+            <p className="max-w-[550px] mb-9 text-white/80">
               I am a performance-driven Developer passionate about solving
               web-based challenges. I’ve contributed to developing web
               applications and am often recognized for being dependability and
