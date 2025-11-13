@@ -6,7 +6,7 @@ import CountUp from "react-countup";
 // 2. Define the initial state (LeetCode starts at 0)
 const initialStats = [
   {
-    num: 0, // This will be updated by our fetch
+    num: 695, // This will be updated by our fetch
     title: "LeetCode Problems",
   },
   {
@@ -14,7 +14,7 @@ const initialStats = [
     title: "GeeksforGeeks Problems",
   },
   {
-    num: 0,
+    num: 454,
     title: "GitHub Contributions",
   },
 ];
