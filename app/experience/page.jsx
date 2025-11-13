@@ -8,15 +8,30 @@ import { SiGeeksforgeeks } from "react-icons/si";
 
 const experienceData = [
   {
+    company: "Tata Consultancy Serivices",
+    position: "Java Software Developer",
+    duration: "Jan 2025 - Present",
+    location: "Navi Mumbai",
+    description:
+      "Worked on a BFSI domain project for SBI (major banking client), focusing on loan management and core banking services.",
+    responsibilities: [
+      "Developed and enhanced multiple backend modules using Java and REST APIs, ensuring scalability, performance, and security of loan lifecycle operations.",
+      "Redesigned and implemented 15+ frontend components using Angular, improving user experience, accessibility, and responsiveness.",
+      "Contributed to large-scale database migration and collaborated in Agile sprints through code reviews, unit testing, and client demos, gaining exposure to Core Banking Services.",
+      "Tech Stack: Java, Spring Boot, Angular, SQL, REST APIs, Git, Agile",
+    ],
+    logo: "/assets/gfg.png",
+  },
+  {
     company: "GeeksforGeeks",
     position: "Part-Time Mentor",
-    duration: "Jan 2021 - Present",
+    duration: "Jan 2021 - Dev 2024",
     location: "Remote",
     description:
-      "Developed and delivered engaging video tutorials on web development technologies like ReactJS, SQL, and JavaScript, as well as machine learning and data science; fostered a community of 20K+ subscribers and re- ceived 80% positive feedback on content quality and clarity.",
+      "Created and presented dynamic video tutorials and premium courses on GeeksforGeeks.org, attracting 20K+ subscribers with an 80% positive feedback rate.",
     responsibilities: [
-      "Created  premium  courses  for  GeeksforGeeks.org",
-      "Provided  mentorship  and  guidance  to  students,  enhancing  their  understanding  and  skills.",
+      "Mentored students in web development and data science, significantly enhancing their technical proficiency and confidence.",
+      "Tech Stack: ReactJS, JavaScript, SQL, Data Science fundamentals",
     ],
     logo: "/assets/gfg.png",
   },

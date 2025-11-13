@@ -18,10 +18,12 @@ const page = () => {
               <span className="text-accent">Akshay Chaturvedi</span>
             </h2>
             <p className="max-w-[550px] mb-9 text-white/80">
-              I am a performance-driven Developer passionate about solving
-              web-based challenges. I’ve contributed to developing web
-              applications and am often recognized for being dependability and
-              excelling at multitasking.
+              Performance-driven Full Stack Developer (Java + Angular) working
+              in the BFSI domain for a major banking client. Experienced in
+              building scalable web applications, optimizing backend services,
+              and enhancing frontend user experiences. Recognized for
+              reliability, adaptability, and effective collaboration in Agile
+              environments.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <DownloadCV />
