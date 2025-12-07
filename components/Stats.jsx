@@ -6,7 +6,7 @@ import CountUp from "react-countup";
 // 2. Define the initial state (LeetCode starts at 0)
 const initialStats = [
   {
-    num: 695, // This will be updated by our fetch
+    num: 0, // This will be updated by our fetch
     title: "LeetCode Problems",
   },
   {
@@ -14,7 +14,7 @@ const initialStats = [
     title: "GeeksforGeeks Problems",
   },
   {
-    num: 454,
+    num: 0, // This will be updated by our fetch
     title: "GitHub Contributions",
   },
 ];
@@ -48,6 +48,10 @@ const Stats = () => {
             if (stat.title === "GitHub Contributions") {
               return { ...stat, num: githubData.total };
             }
+            console.log("Fetched Stats:", {
+              leetcode: leetcodeData.total,
+              github: githubData.total,
+            });
             return stat; // Return GFG and others unchanged
           })
         );
