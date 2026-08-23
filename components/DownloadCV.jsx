@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const DownloadCV = () => {
   const handleDownloadClick = () => {
-    window.open("https://akshay-resumee.tiiny.site");
+    window.open("https://akshay-chaturvedi-resume.tiiny.site");
   };
 
   return (
